@@ -1,0 +1,13 @@
+body,html{
+	height: 100%;
+}
+#back{
+	height: 100%;
+	background-image: url("AboutUs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+#launch{
+	background-color: white;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="javascript.js"></script>
+</head>
+<style>
+#back{
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 2px;
+  float: left;
+  z-index: 40;
+}
+#back:hover{
+  cursor: pointer;
+  background:url(back2.png);
+}
+#specs{
+font-size: 16px;
+font-family:"Times New Roman";
+}
+#gen{
+	font-size: 16px;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+h1{
+	font-size: 16px;
+    font-family: 'Roboto';
+	text-align: center;
+}
+li{
+	font-weight: bold;
+	font-size: 14px;
+	font-family:"Times New Roman";
+}
+#sidetext{
+		font-size: 16px;
+	font-family:"Times New Roman";
+	color: grey;
+}
+.item1 { grid-area: header;
+background-color: #2196F3;
+height: 50px;
+ }
+.item2 { grid-area: main;
+background-color: #fff;
+height: 495px;
+ }
+.item3 { grid-area: right; 
+overflow: scroll;
+background-color: #fff;
+height: 495px;}
+.item4 { grid-area: footer; 
+text-align: center;
+background-color: #fff
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 1px;
+  background-color:#000;
+  padding: 0px;
+}
+.grid-container > div {
+  padding: 20px 0;
+  font-size: 30px;
+}
+#button{
+cursor:pointer;
+}
+#one{
+margin-left: 20%;
+margin-top:1%;
+float: left;
+height: 20px;
+}
+#two{
+margin-left:0.2%;
+margin-top:01.5%;
+float: left;
+}
+input[type="text"]{
+outline: none;
+text-align: center;
+font-weight: bold;
+border-radius:10px;
+height:25px;
+}
+button{
+margin-left:1%;
+outline:none;
+  border-radius:10px;
+  width:8%;
+  height:40px;
+  border:2px solid #fff;
+  background-color:#000;
+  color:#fff;
+  font-weight:bold;
+  border-bottom-width:4px;
+}
+button:hover{
+color:#000;
+border-color:#000;
+background-color:#fff;
+}
+</style>
+<body>
+<div class="grid-container">
+  <div class="item1">
+<img id="back" src="back.png" onclick="goback(1)">
+  	<img src="logo.png" width="07%" style="border-radius: 10%;float: left; margin-left: 30px;""><input type="text" name="search" style="width:400px" id="one"><img src="search.png" height="15px" width="15px" id="two" onclick="error()"></div>
+  <div class="item2"><img src="apple.jpeg" style="width: 700px" onclick="openinfull()"></div>  
+  <div class="item3"><h1>Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra) MQD32HN/A A1466</h1>
+  	<hr>
+<ul>
+	<p id="sidetext">Highlights</p>
+	<li>Intel Core i5 Processor (5th Gen)</li>
+	<li>8 GB DDR3 RAM</li>
+	<li>64 bit Mac OS Operating System</li>
+	<li>128 GB SSD</li>
+	<li>13.3 inch Display</li>
+</ul>
+  	<hr>
+  <p id="sidetext" style="margin-left: 35px">Price : </p>
+  <p id="gen" style="margin-left: 35px">₹53,899</p><hr>
+  <p id="sidetext" style="margin-left: 35px">Specifications </p>
+  <p id="gen" style="margin-left: 35px">General</p>
+<p id="specs" style="margin-left: 35px">
+<br><br>
+<e id="sidetext">Sales Package : </e> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       Laptop, Battery, Power Adaptor, User Guide, Warranty Documents
+<br><br>
+<e id="sidetext">Model Number : </e>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+MQD32HN/A A1466
+<br><br>
+<e id="sidetext">Part Number : </e>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+MQD32HN/A
+<br><br>
+<e id="sidetext">Series : </e>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+MacBook Air
+<br><br>
+<e id="sidetext">Color: </e>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Silver
+<br><br>
+<e id="sidetext">Type : </e>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Thin and Light Laptop
+<br><br>
+<e id="sidetext">Suitable For : </e>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProcessing & Multitasking, Travel & Business
+<br><br>
+<e id="sidetext">Battery Backup : </e>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Upto 12 hours
+<br><br>
+<e id="sidetext">Power Supply : </e>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+45 W MagSafe 2 Power Adapter
+</p>
+  </div>
+  <div class="item4">
+  <button onclick="getdata()">Add to Cart</button>
+  <button id="button" onclick="buynow()">Buy Now</button>
+  </div>
+</div>
+
+</body>
+</html>

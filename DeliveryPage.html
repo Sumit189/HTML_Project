@@ -1,0 +1,123 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Delivery Page</title>
+<style type="text/css">
+body{
+background-color: #E3F2FD;
+}
+#topslab{
+    font-style: normal;
+    font-weight: 100;
+    border-radius:5%;
+    display: block;
+    background-color: #fff;
+    width: 30vw;
+    height:550px;
+    border:2px solid #3C75CA;
+    box-shadow:5px 5px 2.5px #000;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 35%;
+    margin-top:2%;
+}
+#Save{
+border-radius: 10px;
+height: 50px;
+width: 120px;
+}
+#Save:hover{
+background: #3C75CA;
+color:#fff;
+}
+.gvcgv {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: bold;
+  text-align: center;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+body,td,th {
+	color: #999;
+}
+</style>
+</head>
+<body align="center" background="#fff">
+  <form onsubmit="done()">
+<table border="0" style="width: 99vw">
+  <tr align="center">
+    <td height="81" bgcolor="#3C75CA" class="gvcgv"><img src="logo.png" style="width: 100px; height:50px; border-radius: 10px"></td>
+  </tr>
+</table>
+<div id=topslab>
+<p align="center">	 DELIVERY ADDRESS</p>
+  <p align="center">&nbsp;</p>
+  <p align="center">
+    <label for="textfield"></label>
+    <input name="textfield" type="text" id="textfield1" placeholder="Name" required /> 
+    <label for="textfield2"></label>
+     <input name="textfield2" type="number" id="textfield2" placeholder="Phone Number" required/>
+  </p>
+  <p align="center">
+    <label for="textfield3"></label>
+    <input name="textfield3" type="number" id="textfield3" placeholder="Pincode" required/>
+    <label for="textfield4"></label>
+    <input name="textfield4" type="text" id="textfield4" placeholder="Locality" required/>
+  </p>
+  <p align="center">
+    <label for="textarea"></label>
+    <textarea name="textarea" id="textarea" cols="45" rows="5" placeholder=" Address (Area and Street)" required></textarea>
+  </p>
+  <p align="center">
+    <label for="textfield5"></label>
+    <input name="textfield5" type="text" id="textfield5" placeholder="City/District" required />
+    <label for="select"></label>
+    <label for="Select State">State</label>
+    <select name="Select State" id="Select State" required>
+      <option>Assam</option>
+      <option>Goa</option>
+      <option>Delhi</option>
+      <option>Punjab</option>
+      <option>Himachal Pradesh</option>
+      <option>Uttar Pradesh</option>
+      <option>Gujarat</option>
+      <option>Kerala</option>
+      <option>Tamil Nadu</option>
+      <option>Andhra Pradesh</option>
+      <option>Karnataka</option>
+      <option>Jammu &amp; Kashmir</option>
+    </select>
+  </p>
+  <p align="center">
+    <label for="textfield6"></label>
+    <input name="textfield6" type="text" id="textfield6" placeholder="Landmark (Optional)" />
+    <label for="textfield7"></label>
+    <input name="textfield7" type="number" id="textfield7" placeholder="Alternate Phone (optional)" />
+  </p>
+  <p align="center">Address Type</p>
+  <p align="center">
+    <input type="radio" name="radio" id="radio" value="radio"  required/>
+    <label for="radio"></label>
+  Home (All day Delivery)
+  <label for="radio2"></label>
+  <label for="radio2"></label>
+  </p>
+  <p align="center">
+    <input type="radio" name="radio" id="radio" value="radio" />
+    <label for="radio"></label>
+  Work (Delivery between 9 am-5 pm)</p>
+  <p align="center">
+    <input type="submit" name="Save and Deliver" id="Save" value="Save and Deliver" onsubmit="done()" />
+  </p>
+  <p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</form>
+</body>
+<script type="text/javascript">
+  function done() {
+    alert("Item booked Successfully");
+  }
+</script>
+</html>
+

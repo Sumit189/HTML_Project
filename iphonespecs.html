@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="javascript.js"></script>
+   
+</head> <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link rel="icon" type="image/png" href="icon.png"/>
+<style>
+body{
+font-family: 'Open Sans', sans-serif;
+}
+#back{
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 2px;
+  float: left;
+  z-index: 40;
+}
+#back:hover{
+  cursor: pointer;
+  background:url(back2.png);
+}
+#specs{
+font-size: 16px;
+}
+#gen{
+	font-size: 16px;
+	font-weight: bold;
+}
+h1{
+	font-size: 16px;
+	text-align: center;
+}
+li{
+	font-weight: bold;
+	font-size: 14px;
+}
+#sidetext{
+		font-size: 16px;
+	color: grey;
+}
+.item2 { grid-area: main;
+background-color: #fff;
+height: 495px;
+ }
+.item3 { grid-area: right; 
+overflow: scroll;
+overflow-x:hidden;
+background-color: #fff;
+height: 495px;}
+.item4 { grid-area: footer; 
+ text-align: center;
+ background-color:#2196F3;
+ height: 60px;
+ border-bottom: 15px solid #304FFE;
+  margin-left:-0.6%;
+   margin-right:-0.6%;
+   margin-bottom:-10px;
+}
+
+.grid-container {
+  display: grid;
+  border-top: 15px solid #304FFE;
+  grid-template-areas:
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 1px;
+  margin-left:-0.6%;
+  margin-right:-0.6%;
+  margin-top:-10px;
+  background-color:#fff;
+}
+
+button{
+cursor:pointer;
+}
+#one{
+margin-left: 20%;
+margin-top:1%;
+float: left;
+height: 20px;
+}
+#two{
+margin-left:0.2%;
+margin-top:01.5%;
+float: left;
+}
+input[type="text"]{
+outline: none;
+text-align: center;
+font-weight: bold;
+height:25px;
+}
+
+#searchbox{
+margin-top:05px;
+margin-left: 350px;
+  cursor: pointer;
+}
+#two{
+margin-left:0.2%;
+margin-top:2%;
+float: left;
+}
+#logo{
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#simg{
+margin-left:5px;
+}
+p1{
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold;
+  margin-left: 30px;
+  cursor: pointer;
+}
+p2{
+  margin-left: 20px;
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold;
+   cursor: pointer;
+}
+p3{
+ margin-left: 20px;
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold; 
+   cursor: pointer;
+}
+p4{
+   margin-left: 20px;
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold; 
+   cursor: pointer;
+}
+table,tr,td{
+  border-collapse: collapse;
+}
+img:hover{
+animation: zoomer 1s ease-in;
+transform: scale(1.2);
+}
+@keyframes zoomer{
+  0%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+
+}
+#srch{
+height: 30px;
+}
+#bt,#bt2{
+  margin-top:9px;
+  margin-left:1%;
+  outline:none;
+  border-radius:10px;
+  width:8%;
+  height:40px;
+  border:2px solid #fff;
+  color:#fff;
+  font-weight:bold;
+  border-bottom-width:4px;
+}
+#bt{
+  background-color: #FFB300;
+}
+#bt2{
+  background-color: #FF6F00;
+}
+#bt:hover{
+color:#000;
+border-color:#FFB300;
+background-color:#fff;
+}
+#bt2:hover{
+color:#000;
+border-color:#FFB300;
+background-color:#fff;
+}
+::-webkit-scrollbar{
+background: transparent;
+width: 0px;
+}
+</style>
+<body onload="username()">
+
+<div class="grid-container" style="background-color:#2196F3;height: 70px">
+  <table>
+    <tr>
+  <td><img src="logo.png" style="width: 100px; height:50px" id="logo"></td>
+    <td><input type="text" id="searchbox" align="left" style="width:400px;height: 20px" placeholder="Search...">
+      <button id="srch" onclick="err()" title="Search">Search</button></td>
+      <td><p1 onclick="opener(1)">Home</p1><p2 onclick="opener(2)">About</p2><p3 onclick="opener(3)">Cart</p3><p4 id="nameofuser"></p4></td>
+    </tr>
+  </table>
+ </div>
+ <br>
+  <div class="item2"><center>
+    <img src="iphonex1.jpeg" style="width:200px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <img src="iphonex.jpeg" style="width: 200px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <img src="iphonex2.jpeg" style="width:200px">
+    </center>
+  </div>  
+  <div class="item3"><h1>Apple iPhone X (Silver, 64 GB)</h1>
+  	<hr>
+<ul>
+	<p id="sidetext">Highlights</p>
+	<li>3 GB RAM | 256 GB ROM |</li>
+	<li>5.8 inch Super Retina HD Display</li>
+	<li>12MP + 12MP Dual Rear Camera | 7MP Front Camera</li>
+	<li>lithium-ion Battery</li>
+	<li>A11 Bionic Chip with 64-bit Architecture, Neural Engine, Embedded M11 Motion Coprocessor Processor</li>
+</ul>
+  	<hr>
+  <p id="sidetext" style="margin-left: 35px">Price : </p>
+  <p id="gen" style="margin-left: 35px">₹97,999</p><hr>
+  <p id="sidetext" style="margin-left: 35px">Specifications </p>
+  <p id="gen" style="margin-left: 35px">General</p>
+<p id="specs" style="margin-left: 35px">
+<br><br>
+<e id="sidetext">In The Box : </e> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       
+Handset, EarPods with Lightning Connector, Lightning to 3.5 mm Headphone Jack Adapter<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLightning to USB Cable, USB Power Adapter, Documentation
+<br><br>
+<e id="sidetext">Model Number : </e>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+MQA82HN/A
+<br><br>
+<e id="sidetext">Model Name : </e>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+iPhone X
+<br><br>
+<e id="sidetext">Color: </e>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Space Gray
+<br><br>
+<e id="sidetext">Browse Type : </e>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Smartphones
+<br><br>
+<e id="sidetext">SIM Type : </e>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Single Sim
+<br><br>
+<e id="sidetext">Hybrid Sim Slot : </e>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+No
+<br><br>
+<e id="sidetext">Operating System : </e>
+&nbsp&nbsp&nbsp
+iOS 11
+</p>
+  </div>
+  <div class="item4">
+  <button id="bt" onclick="getdata(3)">Add to Cart</button>
+  <button id="bt2" onclick="buynow(3)">Buy Now</button>
+  </div>
+</div>
+</body>
+</html>

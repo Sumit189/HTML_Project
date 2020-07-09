@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="javascript.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="icon" type="image/png" href="icon.png"/>
+</head>
+<style>
+body{
+font-family: 'Open Sans', sans-serif;
+}
+#back{
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 2px;
+  float: left;
+  z-index: 40;
+}
+#back:hover{
+  cursor: pointer;
+  background:url(back2.png);
+}
+#specs{
+font-size: 16px;
+}
+#gen{
+  font-size: 16px;
+  font-weight: bold;
+}
+h1{
+  font-size: 16px;
+  text-align: center;
+}
+li{
+  font-weight: bold;
+  font-size: 14px;
+}
+#sidetext{
+    font-size: 16px;
+  color: grey;
+}
+.item2 { grid-area: main;
+background-color: #fff;
+height: 495px;
+ }
+.item3 { grid-area: right; 
+overflow: scroll;
+overflow-x:hidden;
+background-color: #fff;
+height: 495px;}
+.item4 { grid-area: footer; 
+ text-align: center;
+ background-color:#2196F3;
+ height: 60px;
+ border-bottom: 15px solid #304FFE;
+  margin-left:-0.6%;
+   margin-right:-0.6%;
+   margin-bottom:-10px;
+}
+
+.grid-container {
+  display: grid;
+  border-top: 15px solid #304FFE;
+  grid-template-areas:
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 1px;
+  background-color:#fff;
+   margin-left:-0.6%;
+   margin-right:-0.6%;
+   margin-top:-10px;
+}
+
+button{
+cursor:pointer;
+}
+#one{
+margin-left: 20%;
+margin-top:1%;
+float: left;
+height: 20px;
+}
+#two{
+margin-left:0.2%;
+margin-top:01.5%;
+float: left;
+}
+input[type="text"]{
+outline: none;
+text-align: center;
+font-weight: bold;
+height:25px;
+}
+
+#searchbox{
+margin-top:05px;
+margin-left: 350px;
+  cursor: pointer;
+}
+#two{
+margin-left:0.2%;
+margin-top:2%;
+float: left;
+}
+#logo{
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#simg{
+margin-left:5px;
+}
+p1{
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold;
+  margin-left: 30px;
+  cursor: pointer;
+}
+p2{
+  margin-left: 20px;
+  color:#fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold;
+}
+p3{
+  margin-left: 20px;
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold; 
+   cursor: pointer;
+}
+p4{
+   margin-left: 20px;
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold; 
+   cursor: pointer;
+}
+table,tr,td{
+  border-collapse: collapse;
+}
+img:hover{
+ animation: zoomer 1s ease-in;
+transform: scale(1.2);
+}
+@keyframes zoomer{
+  0%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+
+}
+#srch{
+height: 30px;
+}
+#bt,#bt2{
+  margin-top:09px;
+  margin-left:1%;
+  outline:none;
+  border-radius:10px;
+  width:8%;
+  height:40px;
+  border:2px solid #fff;
+  color:#fff;
+  font-weight:bold;
+  border-bottom-width:4px;
+}
+#bt{
+  background-color: #FFB300;
+}
+#bt2{
+  background-color: #FF6F00;
+}
+#bt:hover{
+color:#000;
+border-color:#FFB300;
+background-color:#fff;
+}
+#bt2:hover{
+color:#000;
+border-color:#FFB300;
+background-color:#fff;
+}
+::-webkit-scrollbar{
+background: transparent;
+width: 0px;
+}
+</style>
+<body onload="username()" style="overflow-x: hidden">
+<div class="grid-container" style="background-color:#2196F3;height: 70px">
+  <table>
+    <tr>
+  <td><img src="logo.png" style="width: 100px; height:50px" id="logo"></td>
+    <td>
+    	<input type="text" id="searchbox" align="left" required style="width:400px;height: 20px" placeholder="Search..."><button id="srch" onclick="err()" title="Search">Search</button>
+    </td>
+      <td><p1 onclick="opener(1)">Home</p1><p2 onclick="opener(2)">About</p2><p3 onclick="opener(3)">Cart</p3><p4 id="nameofuser"></p3></td>
+    </tr>
+  </table>
+ </div>
+ <br>
+  <div class="item2">
+<center>
+    <figure>
+      <img src="mac.5.jpg" style="width:400px"  onclick="opn(1)">
+      <figcaption><B>Macbook</B></figcaption>
+</figure>
+<figure>
+    <img src="red.2.jpg" style="width: 400px"  onclick="opn(2)">
+    <figcaption><B>Mi A1</B></figcaption>
+</figure>
+<figure>
+    <img src="PHONE.jpg" style="width:400px"  onclick="opn(3)">
+    <figcaption><B>iPhone</B></figcaption>
+    </figure>
+    </center>
+    </div> 
+</div>
+</body>
+<script type="text/javascript">
+	function opn(a){
+	if(a=='1'){
+		window.open("macspecs.html","_self");
+	}
+	else if(a=='2'){
+		window.open("mispecs.html","_self");
+	}
+	else if(a=='3'){
+		window.open("iphonespecs.html","_self");
+	}}
+	function opnlink(a){
+		if(a=='1'){
+			window.open("cart.html","_self");
+		}
+		else if(a=='2'){
+			window.open("AboutUs.html","_self");
+		}
+		else if(a=='3'){
+			window.open("Login.html","_self");
+		}
+	}
+
+</script>
+</html>

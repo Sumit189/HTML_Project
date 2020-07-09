@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front</title>
+</head>
+<body onload="loadad()">
+<div id="topslab"><k><img src="logo.png" style="width: 100px; height:50px">Fastest delivery at Doorsteps</k><input type="text" name="search" style="width:400px" id="one"> <img src="search.png" height="15px" width="15px" id="two" onclick="error()"> <img src="cart.png" height="70px" width="70px" id="three" onclick="Buynow()">
+</div>
+<table>
+	<tr>
+		<td width="450px">Item1</td>
+		<td><img id="adimage1" src="ad1.png" height="400px">
+            <img id="adimage2" src="ad2.png" height="400px">
+            <img id="adimage3" src="ad3.png" height="400px">
+		</td>
+	</tr>
+</table>
+
+</body>
+<style type="text/css">
+div{
+margin: 0;
+}
+body{
+	margin:0;
+}
+#addisplay{
+	margin: 0;
+}
+k{  color:#fff;
+	float:left;
+	margin-top:1%;
+	font-size: 12px;
+	margin-left:1%;
+	text-align: center;
+}
+#one{
+margin-left: 20%;
+margin-top:1.5%;
+float: left;
+}
+#two{
+margin-left:0.2%;
+margin-top:2%;
+float: left;
+}
+#three{
+margin-left:25%;
+margin-top:2%;
+float: left;	
+}
+#topslab{
+	color:#fff;
+	text-align: center;
+	vertical-align: center;
+	font-size: 18px;
+    display: block;
+    background-color:#2196F3;
+    width: 100vw;
+    height:70px;
+}
+input[type="text"]{
+outline: none;
+text-align: center;
+font-weight: bold;
+border-radius:10px;
+height:25px;
+}
+table,tr,td{
+border:1px solid black;
+border-collapse: collapse;
+}	
+
+#adimage1{
+}
+#adimage2{
+
+}
+#adimage3{
+
+}
+</style>
+<script type="text/javascript">
+var adid;
+var imgcounter=0;  
+function loadad(){
+	document.getElementsById("adimage2").style.display="none";
+}
+function error() {
+		alert("Site is under Development");
+	}	
+
+function Buynow(){
+	window.open("Buynow.html","_self");
+}
+
+</script>
+</html>

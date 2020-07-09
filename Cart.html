@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+	<script src="javascript.js"></script>
+	  <link rel="icon" type="image/png" href="icon.png"/>
+	   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body onload="loaditems()">
+<div class="upperhead" style="background-color:#2196F3;height: 70px">
+	 <table>
+    <tr>
+  <td><img src="logo.png" style="width: 100px; height:50px" id="logo"></td>
+    <td><input type="text" id="searchbox" align="left" style="width:400px;height: 20px" placeholder="Search..."><button id="srch" onclick="err()">Search</button></td>
+      <td><p1 onclick="opener(1)">Home</p1><p2 onclick="opener(2)">About</p2><p3 onclick="opener(3)">Cart</p3><p4 id="nameofuser"></p4></td>
+    </tr>
+  </table>
+</div>
+<span>
+<div class="first" style="float: left">
+	<table>
+		<tr>
+			<td style="width: 30vw;height: 28vh"><center id="img1"></center></td>
+			<td style="width: 15vw" id="product1"></td>
+			<td style="width: 15vw" id="price1"></td>
+		</tr>
+	</table>
+</div>
+<div class="second" align="left" style="float: right;"><center style="font-size: 24px;">Total Price</center>
+<br>
+<br>
+<center><p id="tp" style="font-size: 20px"></p><center>
+<br>
+<center><button id="bn" onclick="cartbuy()">Buy Now</button></center>
+</div>
+<hr id="Tdmark">
+<br>
+<center><p>This Website is Authorized by <a href="www.google.com">Google.com</a> all trademarks are registed to Sumit&#8482</p></center>
+</body>
+<style type="text/css">
+.upperhead{
+	 margin-left:-0.6%;
+     margin-right:-0.6%;
+    margin-top:-10px;
+	border-top: 15px solid #304FFE;
+}	
+input[type="text"]{
+outline: none;
+text-align: center;
+font-weight: bold;
+height:25px;
+}
+body{
+	background-color: #E3F2FD;
+font-family: 'Open Sans', sans-serif;
+}
+#Tdmark{
+margin-top:20%;
+}
+#searchbox{
+margin-top:05px;
+margin-left: 350px;
+  cursor: pointer;
+}
+#two{
+margin-left:0.2%;
+margin-top:2%;
+float: left;
+}
+#logo{
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#simg{
+margin-left:5px;
+}
+#bn{
+margin-left:1%;
+  outline:none;
+  border-radius:10px;
+  width:30%;
+  height:40px;
+  border:2px solid #fff;
+  color:#fff;
+  background-color:#2196F3; 
+  font-weight:bold;
+  border-bottom-width:4px;
+}
+#bn:hover{
+background-color: #fff;
+border:2px solid #2196F3;
+color:#2196F3;
+}
+p1{
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold;
+  margin-left: 30px;
+  cursor: pointer;
+}
+p2{
+  margin-left: 20px;
+  color:#fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold;
+}
+p3{
+ margin-left: 20px;
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold; 
+}
+p4{
+   margin-left: 20px;
+  color:#fff;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: bold; 
+   cursor: pointer;
+}
+table,tr,td{
+  border-collapse: collapse;
+}
+#srch{
+height: 30px;
+}
+.first{
+margin-top: 30px;
+margin-left: 40px;
+height: 220px;
+width: 60vw;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 1px 1px 5px #000;
+}
+.second{
+margin-top: 30px;
+margin-left: 05px;
+height: 220px;
+width: 30vw;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 1px 1px 5px #000;
+}
+.third{
+margin-left: 40px;
+height: 220px;
+width: 60vw;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 1px 1px 5px #000;
+}
+.four{
+margin-left: 40px;
+height: 220px;
+width: 60vw;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 1px 1px 5px #000;
+}
+</style>
+</html>
